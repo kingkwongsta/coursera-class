@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <header>
+    <nav>
+      <a href="index.html"
+        ><img
+          class="logo-banner"
+          src="images/logo-banner.png"
+          alt="little-lemon-logo-banner"
+      /></a>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <div class="reservations">
+      <div class="reservation-form">
+        <div class="reservation-header">
+          <h1 access="false">Reservations</h1>
+          <p>
+            Let us know what time works best for you and we will get back to you
+          </p>
+        </div>
+        <div class="form-name">
+          <label for="text-1692135489329">First and Last Name</label>
+          <input
+            type="text"
+            placeholder="john doe"
+            class="form-name-field"
+            access="false"
+            maxlength="30"
+            required="required"
+            aria-required="true"
+          />
+        </div>
+        <div class="form-email">
+          <label>Email Address</label>
+          <input
+            type="email"
+            placeholder="johndoe@email.com"
+            class="form-email-field"
+            access="false"
+            maxlength="30"
+            required="required"
+            aria-required="true"
+          />
+        </div>
+        <div class="form-phone">
+          <label>Phone Number</label>
+          <input
+            type="tel"
+            placeholder="(123) 456 - 7891"
+            class="form-phone-filed"
+            access="false"
+            required="required"
+            aria-required="true"
+          />
+        </div>
+        <div class="form-date">
+          <label>Date Field</label>
+          <input
+            type="date"
+            class="form-date-field"
+            access="false"
+            required="required"
+            aria-required="true"
+          />
+        </div>
+        <div class="form-time">
+          <label>Time</label>
+          <select class="form-time-field">
+            <option disabled="null" selected="null">What Time?</option>
+            <option value="5p">5:00 pm</option>
+            <option value="6p">6:00 pm</option>
+            <option value="7p">7:00 pm</option>
+            <option value="8p">8:00 pm</option>
+          </select>
+        </div>
+        <div class="form-notes">
+          <label>Additional Notes</label>
+          <textarea
+            type="textarea"
+            class="form-notes-field"
+            access="false"
+          ></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="button" class="form-submit-button" access="false">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
