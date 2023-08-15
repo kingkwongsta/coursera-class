@@ -10,11 +10,11 @@ h1 {
 }
 h2 {
   margin: 10px 0 10px 0;
-  color: #a6826d;
+  color: #c9a11e;
   font-size: 1.5em;
 }
 p {
-  color: #676940;
+  color: #b8b7b4;
 }
 
 /* Header */
@@ -85,4 +85,21 @@ header a:hover {
 
 ul.food-item li {
   list-style: none;
+  color: #b8b7b4;
+  margin: 8px 0 8px 0;
+}
+.reservations {
+  margin: 50px 70px 50px 70px;
+  padding: 20px;
+  background-color: #f5f582;
+  border-radius: 20px;
+}
+.form-name,
+.form-email,
+.form-phone,
+.form-date,
+.form-time,
+.form-notes {
+  margin: 10px 0 10px 0;
+  color: #666664;
 }

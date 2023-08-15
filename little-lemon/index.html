@@ -80,10 +80,13 @@
         </div>
       </div>
     </div>
-    <reservations>
+    <div class="reservations">
       <div class="reservation-form">
         <div class="reservation-header">
           <h1 access="false">Reservations</h1>
+          <p>
+            Let us know what time works best for you and we will get back to you
+          </p>
         </div>
         <div class="form-name">
           <label for="text-1692135489329">First and Last Name</label>
@@ -109,78 +112,51 @@
             aria-required="true"
           />
         </div>
-        <div class="formbuilder-text form-group field-text-1692135497074">
-          <label for="text-1692135497074" class="formbuilder-text-label"
-            >Phone Number<span class="formbuilder-required">*</span></label
-          >
+        <div class="form-phone">
+          <label>Phone Number</label>
           <input
             type="tel"
             placeholder="(123) 456 - 7891"
-            class="form-control"
-            name="text-1692135497074"
+            class="form-phone-filed"
             access="false"
-            id="text-1692135497074"
             required="required"
             aria-required="true"
           />
         </div>
-        <div class="formbuilder-date form-group field-date-1692135501889">
-          <label for="date-1692135501889" class="formbuilder-date-label"
-            >Date Field<span class="formbuilder-required">*</span></label
-          >
+        <div class="form-date">
+          <label>Date Field</label>
           <input
             type="date"
-            class="form-control"
-            name="date-1692135501889"
+            class="form-date-field"
             access="false"
-            id="date-1692135501889"
             required="required"
             aria-required="true"
           />
         </div>
-        <div class="formbuilder-select form-group field-select-1692135714256">
-          <label for="select-1692135714256" class="formbuilder-select-label"
-            >Time</label
-          >
-          <select
-            class="form-control"
-            name="select-1692135714256"
-            id="select-1692135714256"
-          >
+        <div class="form-time">
+          <label>Time</label>
+          <select class="form-time-field">
             <option disabled="null" selected="null">What Time?</option>
-            <option value="5p" id="select-1692135714256-0">5:00 pm</option>
-            <option value="6p" id="select-1692135714256-1">6:00 pm</option>
-            <option value="7p" id="select-1692135714256-2">7:00 pm</option>
-            <option value="8p" id="select-1692135714256-3">8:00 pm</option>
+            <option value="5p">5:00 pm</option>
+            <option value="6p">6:00 pm</option>
+            <option value="7p">7:00 pm</option>
+            <option value="8p">8:00 pm</option>
           </select>
         </div>
-        <div
-          class="formbuilder-textarea form-group field-textarea-1692135526663"
-        >
-          <label for="textarea-1692135526663" class="formbuilder-textarea-label"
-            >Additional Notes</label
-          >
+        <div class="form-notes">
+          <label>Additional Notes</label>
           <textarea
             type="textarea"
-            class="form-control"
-            name="textarea-1692135526663"
+            class="form-notes-field"
             access="false"
-            id="textarea-1692135526663"
           ></textarea>
         </div>
-        <div class="formbuilder-button form-group field-button-1692135674145">
-          <button
-            type="button"
-            class="btn-default btn"
-            name="button-1692135674145"
-            access="false"
-            style="default"
-            id="button-1692135674145"
-          >
-            Button
+        <div class="form-submit">
+          <button type="button" class="form-submit-button" access="false">
+            Submit
           </button>
         </div>
       </div>
-    </reservations>
+    </div>
   </body>
 </html>
