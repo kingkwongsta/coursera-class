@@ -25,7 +25,7 @@
   <body>
     <div class="intro-container">
       <div class="about-container">
-        <h2>About</h2>
+        <h1>About</h1>
         <p>
           Based in Chicago, Illinois, Little Lemon is a family-owned
           Mediterranean restaurant, focused on traditional recipes served with a
@@ -46,37 +46,141 @@
         </p>
       </div>
       <div class="menu-container">
-        <div class="menu-appetizers">
-          <h2>Menu</h2>
-          <h3>Appetizers</h2>
-          <ul>
-            <li>Whipped Feta with Cucumbers</li>
-            <li>Greek Salad with Shrimp and Kamut</li>
-            <li>Saganaki Halloumi</li>
-            <li>Zeytinyağli Yaprak Sarmasi</li>
-            <li>Summer Bulgur and Green Bean Salad</li>
-          </ul>
-        </div>
-        <div class="menu-entrees">
-          <h3>Entrees</h3>
-          <ul>
-            <li>Chicken Breasts with Artichoke-Olive Sauce</li>
-            <li>Sea Bass with Tomato and Black Olive Salsa</li>
-            <li>Greek Fish Stew</li>
-            <li>Spiced Pork Tenderloin with Hazelnut Vinaigrette</li>
-          </ul>
-        </div>
-        <div class="menu-desserts">
-          <h3>Desserts</h3>
-          <ul>
-            <li>Baklava</li>
-            <li>Tiramisu</li>
-            <li>Loukoumades</li>
-            <li>Galaktoboureko</li>
-            <li>Pastéis de Nata</li>
-          </ul>
+        <h1>Menu</h1>
+        <div class="menu-items">
+          <div class="menu-appetizers">
+            <h2>Appetizers</h2>
+            <ul class="food-item">
+              <li>Whipped Feta with Cucumbers</li>
+              <li>Greek Salad with Shrimp and Kamut</li>
+              <li>Saganaki Halloumi</li>
+              <li>Zeytinyağli Yaprak Sarmasi</li>
+              <li>Summer Bulgur and Green Bean Salad</li>
+            </ul>
+          </div>
+          <div class="menu-entrees">
+            <h2>Entrees</h2>
+            <ul class="food-item">
+              <li>Chicken Breasts with Artichoke-Olive Sauce</li>
+              <li>Sea Bass with Tomato and Black Olive Salsa</li>
+              <li>Greek Fish Stew</li>
+              <li>Spiced Pork Tenderloin with Hazelnut Vinaigrette</li>
+            </ul>
+          </div>
+          <div class="menu-desserts">
+            <h2>Desserts</h2>
+            <ul class="food-item">
+              <li>Baklava</li>
+              <li>Tiramisu</li>
+              <li>Loukoumades</li>
+              <li>Galaktoboureko</li>
+              <li>Pastéis de Nata</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+    <reservations>
+      <div class="reservation-form">
+        <div class="reservation-header">
+          <h1 access="false">Reservations</h1>
+        </div>
+        <div class="form-name">
+          <label for="text-1692135489329">First and Last Name</label>
+          <input
+            type="text"
+            placeholder="john doe"
+            class="form-name-field"
+            access="false"
+            maxlength="30"
+            required="required"
+            aria-required="true"
+          />
+        </div>
+        <div class="form-email">
+          <label>Email Address</label>
+          <input
+            type="email"
+            placeholder="johndoe@email.com"
+            class="form-email-field"
+            access="false"
+            maxlength="30"
+            required="required"
+            aria-required="true"
+          />
+        </div>
+        <div class="formbuilder-text form-group field-text-1692135497074">
+          <label for="text-1692135497074" class="formbuilder-text-label"
+            >Phone Number<span class="formbuilder-required">*</span></label
+          >
+          <input
+            type="tel"
+            placeholder="(123) 456 - 7891"
+            class="form-control"
+            name="text-1692135497074"
+            access="false"
+            id="text-1692135497074"
+            required="required"
+            aria-required="true"
+          />
+        </div>
+        <div class="formbuilder-date form-group field-date-1692135501889">
+          <label for="date-1692135501889" class="formbuilder-date-label"
+            >Date Field<span class="formbuilder-required">*</span></label
+          >
+          <input
+            type="date"
+            class="form-control"
+            name="date-1692135501889"
+            access="false"
+            id="date-1692135501889"
+            required="required"
+            aria-required="true"
+          />
+        </div>
+        <div class="formbuilder-select form-group field-select-1692135714256">
+          <label for="select-1692135714256" class="formbuilder-select-label"
+            >Time</label
+          >
+          <select
+            class="form-control"
+            name="select-1692135714256"
+            id="select-1692135714256"
+          >
+            <option disabled="null" selected="null">What Time?</option>
+            <option value="5p" id="select-1692135714256-0">5:00 pm</option>
+            <option value="6p" id="select-1692135714256-1">6:00 pm</option>
+            <option value="7p" id="select-1692135714256-2">7:00 pm</option>
+            <option value="8p" id="select-1692135714256-3">8:00 pm</option>
+          </select>
+        </div>
+        <div
+          class="formbuilder-textarea form-group field-textarea-1692135526663"
+        >
+          <label for="textarea-1692135526663" class="formbuilder-textarea-label"
+            >Additional Notes</label
+          >
+          <textarea
+            type="textarea"
+            class="form-control"
+            name="textarea-1692135526663"
+            access="false"
+            id="textarea-1692135526663"
+          ></textarea>
+        </div>
+        <div class="formbuilder-button form-group field-button-1692135674145">
+          <button
+            type="button"
+            class="btn-default btn"
+            name="button-1692135674145"
+            access="false"
+            style="default"
+            id="button-1692135674145"
+          >
+            Button
+          </button>
+        </div>
+      </div>
+    </reservations>
   </body>
 </html>

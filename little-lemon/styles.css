@@ -3,19 +3,18 @@
   padding: 0;
   font-family: Helvetica, Arial;
 }
+h1 {
+  margin: 10px 0 20px 0;
+  color: #f2b705;
+  font-size: 2em;
+}
 h2 {
   margin: 10px 0 10px 0;
-  color: #f2b705;
-}
-h3 {
-  margin: 10px 0 5px 0;
-  color: #f24738;
+  color: #a6826d;
+  font-size: 1.5em;
 }
 p {
   color: #676940;
-}
-li {
-  list-style: none;
 }
 
 /* Header */
@@ -68,4 +67,22 @@ header a:hover {
 .about-container > p {
   font-size: 18px;
   margin: 20px 0 20px 0;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-items {
+  display: flex;
+}
+.menu-appetizer,
+.menu-entrees,
+.menu-desserts {
+  margin: 0 25px 0 25px;
+}
+
+ul.food-item li {
+  list-style: none;
 }
