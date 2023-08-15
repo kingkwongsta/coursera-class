@@ -5,14 +5,17 @@
 }
 
 /* Header */
-header {
+nav {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
   box-shadow: 0 1px 8px #ddd;
 }
-
+.logo-banner {
+  width: 300px;
+}
 #nav-title {
   margin-right: auto;
   font-size: 1.5em;
