@@ -1,35 +1,93 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currValue, setCurrValue] = useState(0);
+  const [calcValue, setCalcValue] = useState(0);
+
+  function handleCalcValue(e) {
+    setCalcValue(parseFloat(e.target.value));
+  }
+
+  function handleAdd() {
+    setCurrValue((x) => x + calcValue);
+  }
+
+  function handleSub() {
+    setCurrValue((x) => x - calcValue);
+  }
+  function handleMul() {
+    setCurrValue((x) => x * calcValue);
+  }
+  function handleDiv() {
+    setCurrValue((x) => x / calcValue);
+  }
+  function resetInput() {
+    setCalcValue((x) => x * 0);
+  }
+  function resetResult() {
+    setCurrValue((x) => x * 0);
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <h1 className="text-teal-700 text-3xl font-bold">Calculator App</h1>
+      <div className="mt-10 mb-10 font-bold text-xl text-stone-800">
+        Result: {currValue}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <div className="input-section">
+        <label className="mr-3">
+          Input a number to apply a mathematical operator to:{" "}
+        </label>
+        <input
+          className="border-2 rounded-xl border-sky-500 text-center w-[80px]"
+          type="number"
+          id="number"
+          name="number"
+          min="0"
+          onChange={handleCalcValue}
+        />
+      </div>
+      <div className="operator-section my-5">
+        <button
+          onClick={handleAdd}
+          className="border-2 border-cyan-800 p-2 rounded-xl mx-2"
+        >
+          add
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <button
+          onClick={handleSub}
+          className="border-2 border-cyan-800 p-2 rounded-xl mx-2"
+        >
+          subtract
+        </button>
+        <button
+          onClick={handleMul}
+          className="border-2 border-cyan-800 p-2 rounded-xl mx-2"
+        >
+          multiply
+        </button>
+        <button
+          onClick={handleDiv}
+          className="border-2 border-cyan-800 p-2 rounded-xl mx-2"
+        >
+          divide
+        </button>
+        <button
+          onClick={resetInput}
+          className="border-2 border-red-600 bg-red-500 text-white p-2 rounded-xl mx-2"
+        >
+          reset input
+        </button>
+        <button
+          onClick={resetResult}
+          className="border-2 border-red-600 bg-red-500 text-white p-2 rounded-xl mx-2"
+        >
+          reset result
+        </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
